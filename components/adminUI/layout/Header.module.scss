@@ -1,0 +1,86 @@
+
+.header {
+  display: flex;
+  width: 100%;
+  place-items: center;
+  
+  .logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  nav {
+    margin-left: auto;
+    button {
+      cursor: pointer;
+      display: flex;
+      place-items: center;
+      gap: .5em;
+      border: none;
+      background-color: transparent;
+    }
+    
+    .avatar {
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      transition: .2s ease;
+    }
+    
+    button:hover .avatar {
+      border: 1px solid #000 !important;
+      // transform: scale(1.2) !important;
+    }
+  }
+}
+.modalBody {
+  color: #505050;
+  & small, hr, i {
+    color: grey;
+  }
+  
+  & p {
+    margin-top: -.095em;
+    // color: grey;
+  }
+  & small {
+    font-weight: bold;
+  }
+  & hr {
+    border: 1px solid #E5E5E5;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  & ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      & button, & a {
+        border: 1px solid #E5E5E5;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: .5em;
+        width: 100%;
+        display: flex;
+        font-size: inherit;
+        gap: 1em;
+        color: inherit;
+      }
+      margin-bottom: .5em;
+      &:hover button, &:hover a {
+        border-color: grey;
+          // box-shadow: 0 0 8px 4px #ccc;
+        }
+    
+    }
+    li i {
+      margin-left: auto;
+    }
+    li button{
+      background-color: transparent;
+      text-align: left;
+    }
+
+  }
+}
