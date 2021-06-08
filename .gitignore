@@ -4,3 +4,6 @@ dist/
 nextjs/
 .firebase/
 .envs
+firbaseClientConfig.js
+.env
+.env.local
